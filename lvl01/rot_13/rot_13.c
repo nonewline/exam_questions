@@ -8,8 +8,8 @@ void	ft_putchar(char c)
 char rot(char c)
 {
     if ((c >= 'A' && c <= 'M') || (c >= 'a' && c <= 'm'))
-	c = c + 13;
-    if ((c >= 'N' && c <= 'Z') || (c >= 'n' && c <= 'z'))
+	    c = c + 13;
+    else if ((c >= 'N' && c <= 'Z') || (c >= 'n' && c <= 'z'))
     	c = c - 13;
     return (c);
 }
