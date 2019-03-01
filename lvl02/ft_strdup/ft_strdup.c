@@ -45,7 +45,7 @@ char	*ft_strdup(char *src)
 	{
 		i++;
 	}
-	str = (char *)malloc(i + 1);
+	str = (char *)malloc(sizeof(char) * (i + 1));
 	if (!str)
 	{
 		errno = ENOMEM;
