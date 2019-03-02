@@ -24,14 +24,6 @@ int		ft_strcmp(char *s1, char *s2)
 		if (s1[count] != s2[count])
 		{
 			s1_total = s1[count];
-			break ;
-		}
-	}
-	count = -1;
-	while (s2[++count] != '\0')
-	{
-		if (s2[++count] != s2[count])
-		{
 			s2_total = s2[count];
 			break ;
 		}
