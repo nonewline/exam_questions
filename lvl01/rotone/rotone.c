@@ -9,10 +9,13 @@ void	rot(char c)
 {
 	if (c == 'Z' || c == 'z')
 		ft_putchar(c - 25);
-	if (c >= 'A' && c < 'Z')
+	else if (c >= 'A' && c < 'Z')
 		ft_putchar(c + 1);
-	if (c >= 'a' && c < 'z')
+	else if (c >= 'a' && c < 'z')
 		ft_putchar(c + 1);
+	else
+		ft_putchar(c);
+	
 }
 
 int		main(int ac, char **av)
