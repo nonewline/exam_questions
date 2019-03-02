@@ -29,19 +29,10 @@ int main(int argc, char **argv)
 	while (argv[1][y] != '\0')
 	{
 		if (argv[1][y] >= 'A' && argv[1][y] <= 'Z')
-		{
 			argv[1][y] += 32;
-			y++;
-		}
 		else if (argv[1][y] >= 'a' && argv[1][y] <='z')
-		{
 			argv[1][y] -= 32;		
-			y++;
-		}
-		else
-		{	
-			y++;
-		}
+		y++;
 	}
 	ft_putstring(argv[1]);
 	ft_putchar('\n');
