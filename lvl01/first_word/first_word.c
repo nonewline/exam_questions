@@ -10,9 +10,9 @@ void	first_word(char *str)
 	int i;
 
 	i = 0;
-	while (str[i] == ' ' && str[i] != '\0')
+	while (str[i] == ' ' && str[i] == '\t' && str[i] == '\n' && str[i] != '\0')
 		i++;
-	while (str[i] != ' ' && str[i] != '\0')
+	while (str[i] != ' ' && str[i] != '\t' && str[i] != '\n' && str[i] != '\0')
 	{
 		ft_putchar(str[i]);
 		i++;
