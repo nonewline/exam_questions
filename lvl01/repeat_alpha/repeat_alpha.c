@@ -17,15 +17,19 @@ int main(int argc, char **argv)
 	}
 	while (argv[1][i] != '\0')
 	{
+		c = 0;
 		if (argv[1][i] >= 'A' && argv[1][i] <= 'Z')
 			c = argv[1][i] - 64;
 		if (argv[1][i]>= 'a' && argv[1][i] <= 'z')
 			c = argv[1][i] - 96;
-		while (c != 0)
-		{
+		if (c != 0)
+			while (c != 0)
+			{
+				ft_putchar(argv[1][i]);
+				c--;
+			}
+		else
 			ft_putchar(argv[1][i]);
-			c--;
-		}
 		i++;
 	}
 	ft_putchar('\n');
