@@ -5,18 +5,6 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-char	ft_up(int c)
-{
-	c += 96;
-	return (c);
-}
-
-char	ft_low(int c)
-{
-	c += 64;
-	return (c);
-}
-
 int main(void)
 {
 	int i;
@@ -27,9 +15,9 @@ int main(void)
 	while (j > 0)
 	{
 		if (i % 2 == 0)
-			ft_putchar(ft_low(i));
+			ft_putchar(64 + i);
 		else
-			ft_putchar(ft_up(i));
+			ft_putchar(96 + i);
 		i++;
         j--;
 	}
